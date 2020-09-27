@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* TAG */
+
+html,
+body,
+#wrapper {
+  min-height: 100vh;
+}
+
+html {
+  font-family: "Roboto", "M PLUS 1p", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  min-width: 100vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+body {
+  top: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  background: white;
+}
+
+/* main {
+} */
+
+footer {
+  width: 100vw;
+  height: 100%;
+  bottom: 0;
+}
+
+/* 全体で使うパーツ */
+.text-mask {
+  display: inline-block;
+  /*これが無いとスマホで表示されない*/
+  margin: 0;
+  color: transparent;
+  /*透明にして背景が見えるようにする*/
+  -webkit-text-fill-color: transparent;
+  background: url("https://images.unsplash.com/photo-1528459709161-157d86910939?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=808&q=80");
+  /*背景の指定*/
+  -webkit-background-clip: text;
+  /*テキストでマスク*/
+  background-clip: text;
+  /*テキストでマスク*/
+  font-size: 25px;
+  font-weight: bolder;
+  line-height: 1;
+}
+
+.text-background {
+  color: white;
+  font-size: 30px;
+  font-family: "M PLUS 1p";
+  font-weight: lighter;
+  height: 50px;
+  max-width: 100vw;
+  background: url("https://images.unsplash.com/photo-1528459709161-157d86910939?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=808&q=80")
+    center / cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.centered {
+  text-align: center;
+}
+
+
+
+/* セクション内のパディングをもたせる */
+.section-item {
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.section-text {
+  padding-left: 5px;
+}
+
+.center-block {
+  margin: 0 auto;
+  max-height: 100vh;
+  min-height: 150px;
+  display: block;
+}
+
+.center-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.center-box {
+  padding: 100px;
+  min-height: 100px;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center-box-2 {
+  padding: 50px;
+  max-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ヘッダー */
+
+.header-left {
+  margin-right: auto;
+}
+
+.header-right {
+  padding-right: 5px;
+}
+
+/* ヘッダー内 */
+.nav {
+  display: flex;
+}
+
+.nav > li > a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding-left: 5px;
+  font-weight: bolder;
+}
+/* 子要素 */
+
+/* イントロ */
+#introduction {
+  font-size: 50px;
+  font-weight: lighter;
+  font-family: "Roboto";
+}
+
+.intro-ribbon {
+  margin: 0px auto 20px auto;
+  min-height: 20vh;
+  min-width: 100vw;
+  /** 位置 **/
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  /** 背景 **/
+  color: white;
+  background: url("https://images.unsplash.com/photo-1528459709161-157d86910939?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=808&q=80")
+    center / cover;
+}
+
+/*about*/
+#about {
+  display: flex;
+  margin: 200px auto 100px auto;
+  min-height: 500px;
+  height: 30vh;
+  align-content: center;
+  line-height: 1.25rem;
+}
+
+/*プロフ画像*/
+.profile-img {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 100;
+}
+.profile-img img {
+  position: absolute;
+  left: -110%;
+  right: -100%;
+  margin: auto;
+}
+/* SNSアイコンコーナー */
+.snsbtn {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.snsbtn li {
+  flex: 0 auto;
+  text-align: center;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  width: 50px;
+  margin: 0px 1px -8px;
+  padding: 0;
+  height: 50px;
+  line-height: 50px;
+  font-size: 23px;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.twttrbtn {
+  border: solid 1px #55acee;
+  color: #55acee;
+}
+
+.twttrbtn:hover {
+  border: solid 1px #55acee;
+  background: #55acee;
+}
+
+.igbtn {
+  border: solid 1px #c6529a;
+  color: #c6529a;
+}
+
+.igbtn:hover {
+  border: solid 1px #c6529a;
+  background: #c6529a;
+}
+
+/* ポートフォリオ画像 */
+
+#portfolio {
+  margin: 0 auto;
+  max-height: 500px;
+  /* min-height: 100px; */
+  display: block;
+}
+
+.multiple-items {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.multiple-items img {
+  height: 20vw;
+  min-height: 300px;
+  max-height: 500px;
+  object-fit: cover;
+  padding: 3px;
+}
+
+/* Skills */
+
+#skills {
+  width: 100vw;
+  max-height: 800px;
+  margin: 100px 0 50px 0;
+}
+
+#skills h3 {
+  color: #c6529a;
+}
+
+#skills p {
+  color: #c6529a;
+  font-weight: 400;
+}
+
+/*お問い合わせ*/
+#contact {
+  height: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 0px;
+}
+
+input.custom {
+  caret-color: pink;
+  letter-spacing: .1rem;
+  padding: 1px;
+}
+
+#contact textarea {
+  font-size:100%;
+  width: 15em;
+  height: 3em;
+  padding: 5px;
+}
+
+.button-text {
+  border: none;
+  background: #dbdbdb;
+  padding: 5px;
+  border-radius: 2px;
+}

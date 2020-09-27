@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>-- amy47 --</title>
+
+  <!-- slick読み込み -->
+  <link rel="stylesheet" href="./asset/slick/slick-theme.css">
+  <link rel="stylesheet" href="./asset/slick/slick.css">
+
+  <!-- bootstrap -->
+  <link href="./asset/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- フォント -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400;700&family=Roboto:wght@100;400;700;900&display=swap"
+    rel="stylesheet">
+
+  <!-- cssよみこみ -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <!-- ナビゲーションバー -->
+
+    <header id="main-header">
+      <div class="header-left">
+      </div>
+      <div class="header-right">
+        <ul class="nav">
+          <li><a href="#about" class="text-mask">ABOUT</a></li>
+          <li>
+            <a href="#portfolio" class="text-mask">PORTFOLIO</a>
+          </li>
+          <li><a href="#skills" class="text-mask">SKILLS</a></li>
+          <li><a href="#contact" class="text-mask">CONTACT</a></li>
+        </ul>
+      </div>
+
+    </header>
+
+    <main>
+
+      <section id="introduction">
+        <p class="intro-ribbon">
+          Arisa.h (amy47)
+        </p>
+      </section>
+      
+      <section id="about" class="center-box centered">
+        <div class="">
+          <br>
+          <p class="section-item">
+          <h3 class="text-mask center-text">About me<br><br></h3>
+          <div class="profile-img centered">
+            <img
+              src="https://images.unsplash.com/photo-1569180967835-3b9bf1845040?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500">
+          </div>
+          <br>
+          <div class="center-text">
+            <br> 北海道出身。マーケター＆リサーチャー。<br>
+            <br> できること：
+            <br>WEB制作、フォトレタッチ、3Dモデリング、ライティング
+            <br>（ゲームアプリメディア・音楽メディアでの執筆経験あり）
+            <br>
+          </div>
+          </p>
+        </div>
+
+        <!-- SNSアカウント -->
+        <div class="center-block section-item">
+          <div class="centered">
+            <p class="text-mask">
+              <br>- follow me -<br>
+            </p>
+          </div>
+          <div class="">
+            <p class="">
+            <ul class="snsbtn">
+              <li><a href="http://twitter.com/emmmmm47/" class="btn twttrbtn"><i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li><a href="http://www.instagram.com/emk_ah/" class="btn igbtn"><i class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ポートフォリオ仮 -->
+      <section id="portfolio" class="section-item center-box">
+        <div class="center-block">
+          <h3 class="center-text text-mask">Portfolio<br></h3>
+          <div class="multiple-items">
+            <img src="./asset/donuts_0526.jpg" class="card-img" alt="3dmodel">
+            <img src="./asset/photo-1460925895917-afdab827c52f.jpeg" class="card-img" alt="samplesite">
+            <img src="./asset/jakob-owens-8-iudQ2otb8-unsplash.jpg" class="card-img" alt="sampleediting">
+          </div>
+          <br>
+        </div>
+      </section>
+
+
+      <!-- スキルチャート↓ -->
+      <section id="skills" class="centered center-block section-item">
+        <p>
+        <h3 class="text-mask section-item">Skills<br></h3>
+        </p>
+        <div class="container center-block">
+          <div class="row centered">
+            <div class="col-lg-3 mt">
+              <canvas id="javascript" height="130" width="130"></canvas>
+              <p>Javascript</p>
+              <br>
+            </div>
+            <div class="col-lg-3 mt">
+              <canvas id="bootstrap" height="130" width="130"></canvas>
+              <p>Bootstrap</p>
+              <br>
+            </div>
+            <div class="col-lg-3 mt">
+              <canvas id="wordpress" height="130" width="130"></canvas>
+              <p>Wordpress</p>
+              <br>
+            </div>
+            <div class="col-lg-3 mt">
+              <canvas id="photoshop" height="130" width="130"></canvas>
+              <p>Photoshop</p>
+              <br>
+            </div>
+          </div>
+          <!-- /row -->
+        </div>
+        <!-- container??? -->
+      </section>
+      <!-- /skills -->
+
+      <section id="contact">
+        <p class="text-background">
+          -お問い合わせ-
+        </p>
+        <div class="centered center-box-2">
+
+          <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc5glZxganZpd8PMsEUdq0U8ue710ItOhtoyp5tRP6ZVRekEw/formResponse "
+            class="">
+            <p>
+              <label for="name ">
+                <div class="text-mask section-item">お名前/name</div>
+              </label>
+              <br>
+              <input type="text " name="entry.1828514350 " id="name " placeholder="お名前をご記入ください" size="30" class="custom"
+                minlength="2" required>
+            </p>
+            <p>
+              <label for="email ">
+                <div class="text-mask section-item">メールアドレス/email</div>
+              </label>
+              <br>
+              <input type="text " name="entry.1770895616 " id="email " placeholder="example@mail.co.jp " size="30"
+                class="custom" required>
+            </p>
+            <p>
+              <label for="msg ">
+                <div class="text-mask section-item">お問い合わせ内容/inquiry</div>
+
+              </label>
+              <br>
+              <textarea name="entry.1533810308 " id="msg " placeholder="お気軽にお問い合わせください。" required></textarea>
+            </p>
+
+            <br>
+            <button type="submit" name="button" value="送信 " class="button-text ">送信</button>
+            <br>
+        </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="text-background ">
+        <div class="">Thanks for visiting :)</div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/688343ed5a.js " crossorigin="anonymous "></script>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
+    crossorigin="anonymous "></script>
+
+  <!-- bottstrap -->
+
+  <script src="./asset/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- slick読み込み -->
+  <script src="./asset/slick/slick.min.js"></script>
+
+  <!-- js呼び出し -->
+  <script src="./chart.js "></script>
+  <script src="./script.js "></script>
+
+</body>
+
+</html>
